@@ -5,4 +5,7 @@
 
 ## Comands
 
- 
+1. Install npm dependences.
+ ```
+npm i
+ ```
