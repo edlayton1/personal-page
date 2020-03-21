@@ -3,7 +3,10 @@ $(document).ready(NavCellphone);
 var contador = 1;
  
 function NavCellphone () {
-	$('.menu_bar').click(function(){
+	console.log("ready");
+	console.log($('.menu_bar'));
+	document.querySelector('.menu_bar').click(function(){
+		console.log("entra")
 		if (contador == 1) {
 			$('nav').animate({
 				right: '0'

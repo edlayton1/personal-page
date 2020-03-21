@@ -2,8 +2,8 @@ const Header = () => {
     const view =
         `
         
-            <div class="menu_bar">
-                <a href="#" onclick="return false;" class="bt-menu"><span class="menu_icon"></span>Menú</a>
+            <div class="menu_bar" id="menu_bar_id">
+                <a href="#"  class="bt-menu"><span class="menu_icon"></span>Menú</a>
             </div>
     
             <nav>
