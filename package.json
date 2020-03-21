@@ -4,7 +4,9 @@
   "description": "my first personal page in web.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "webpack:dev": "webpack --mode development",
+    "webpack:server":"webpack-dev-server",
+    "git:push":"git push -u origin master"
   },
   "author": "Darki",
   "license": "ISC",

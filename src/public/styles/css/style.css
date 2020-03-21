@@ -1,0 +1,428 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../../assets/fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
+}
+@font-face {
+  font-family: "PtSansRegular";
+  src: url("../../assets/fonts/PT_Sans_Caption/PTSansCaption-Regular.ttf");
+}
+header {
+  background-color: #023859;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0c1821;
+}
+
+.menu_bar {
+  display: none;
+}
+
+header {
+  width: 100%;
+}
+
+header nav {
+  background: #023859;
+  z-index: 1000;
+  max-width: 1000px;
+  width: 95%;
+  margin: 20px auto;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+header nav ul li:hover {
+  background: #E6344A;
+}
+
+header nav ul li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+}
+
+header nav ul li a span {
+  margin-right: 10px;
+}
+
+header nav ul li:hover .children {
+  display: block;
+}
+
+header nav ul li .children {
+  display: none;
+  background: #011826;
+  position: absolute;
+  width: 150%;
+  z-index: 1000;
+}
+
+header nav ul li .children li {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header nav ul li .children li a {
+  display: block;
+}
+
+header nav ul li .children li a span {
+  float: right;
+  position: relative;
+  top: 3px;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+header nav ul li .caret {
+  position: relative;
+  top: 3px;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+
+section#container {
+  background-color: #a62639;
+  width: 80%;
+  margin-left: 10%;
+  color: white;
+  font-family: "Inter";
+}
+
+section#container h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+section#container .Title {
+  padding-top: 20px;
+}
+
+section#container h4 {
+  font-size: 15px;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 4%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+section#container ul {
+  padding-left: 10%;
+  text-decoration: none;
+}
+
+.Title {
+  background-color: #930017;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+section#container .escolar-information {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #930017;
+}
+
+.photo-block {
+  background-color: #930017;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 2%;
+}
+
+.photo-block div {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-block #panel1 {
+  background: url("../../assets/images/FI.jpg");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 1%;
+}
+
+.photo-block #panel2 {
+  background: url("../../assets/images/Ml.jpg");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 1%;
+}
+
+.photo-block #panel3 {
+  background: url("../../assets/images/P2.jpg");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 0.5%;
+}
+
+.photo-block #panel4 {
+  background: url("../../assets/images/Vio.jpeg");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 0.5%;
+}
+
+.photo-block #panel5 {
+  background: url("../../assets/images/SA.jpg");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 0.5%;
+}
+
+.photo-block #panel6 {
+  background: url("../../assets/images/MSZ.jpg");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 0.5%;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding-top: 80px;
+  }
+
+  .menu_bar {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #E6344A;
+  }
+
+  .menu_bar .bt-menu {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .menu_bar span {
+    float: right;
+    font-size: 40px;
+  }
+
+  header nav {
+    width: 80%;
+    height: calc(100% - 80px);
+    position: fixed;
+    right: -100%;
+    margin: 0;
+    overflow: scroll;
+  }
+
+  header nav ul li {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  header nav ul li a {
+    display: block;
+  }
+
+  header nav ul li:hover .children {
+    display: none;
+  }
+
+  header nav ul li .children {
+    width: 100%;
+    position: relative;
+  }
+
+  header nav ul li .children li a {
+    margin-left: 20px;
+  }
+
+  header nav ul li .caret {
+    float: right;
+  }
+
+  section#container {
+    background-color: #a62639;
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+    font-family: "Inter";
+  }
+
+  section#container h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  section#container .Title {
+    padding-top: 20px;
+  }
+
+  section#container h4 {
+    font-size: 15px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  section#container ul {
+    padding-left: 10%;
+    text-decoration: none;
+  }
+
+  .Title {
+    background-color: #930017;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  section#container .escolar-information {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #930017;
+  }
+
+  .photo-block {
+    background-color: #930017;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 2%;
+  }
+
+  .photo-block div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .photo-block #panel1 {
+    background: url("../../assets/images/FI.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 1%;
+  }
+
+  .photo-block #panel2 {
+    background: url("../../assets/images/Ml.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 1%;
+  }
+
+  .photo-block #panel3 {
+    background: url("../../assets/images/P2.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 0.5%;
+  }
+
+  .photo-block #panel4 {
+    background: url("../../assets/images/Vio.jpeg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 0.5%;
+  }
+
+  .photo-block #panel5 {
+    background: url("../../assets/images/SA.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 0.5%;
+  }
+
+  .photo-block #panel6 {
+    background: url("../../assets/images/MSZ.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 0.5%;
+  }
+}
+span.menu_icon {
+  background: url(../../assets/icons/bar-menu.png) no-repeat center center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+span.project_icon {
+  background: url(../../assets/icons/project.png) no-repeat center center;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+
+span.note_icon {
+  background: url(../../assets/icons/note.png) no-repeat center center;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+
+span.social_icon {
+  background: url(../../assets/icons/social-media.png) no-repeat center center;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+
+span.home_icon {
+  background: url(../../assets/icons/home.png) no-repeat center center;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=style.css.map */
